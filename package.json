@@ -24,6 +24,7 @@
     "typescript-eslint": "^8.0.0"
   },
   "dependencies": {
+    "@pixi/unsafe-eval": "^6.5.10",
     "pixi-live2d-display": "^0.4.0",
     "pixi.js": "^6.5.10"
   }

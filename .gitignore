@@ -5,3 +5,5 @@ dist/
 *.log
 models/*
 !models/.gitkeep
+CubismWebSamples-*/
+CubismSdkForWeb-*/

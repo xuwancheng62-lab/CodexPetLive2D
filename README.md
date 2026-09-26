@@ -27,4 +27,6 @@ No character models or proprietary Cubism Core files are included. To try a mode
 2. Put a compatible Cubism 3/4 model in `models/model/`, with its entry file named `model3.json`. Keep its textures, motions, and expressions in their original relative locations.
 3. Run `npm run dev`. The app loads the model and plays its configured idle motion, if present.
 
+Validated locally with the official Haru sample and Cubism SDK for Web 5 r.5 Core using a hidden Electron window: model loading, transparent output, and changing animation frames passed. The renderer targets classic Cubism 3/4 models; models using newer offscreen effects are not supported. Downloaded SDK and sample folders are excluded from Git. Local assets are copied into `out/renderer` when building, so review model and SDK licenses before distributing that build.
+
 The `models/` folder is ignored by Git. Only use models you have the right to use; do not commit or redistribute third-party model files without their owner's permission. This repository's code license does not grant rights to any external model or Cubism Core.
