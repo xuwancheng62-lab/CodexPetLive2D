@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'"
+    />
+    <title>Codex Live2D Pet</title>
+  </head>
+  <body>
+    <main id="app" aria-label="Desktop pet">
+      <div id="placeholder" class="pet" aria-label="Placeholder pet">
+        <div class="ears"><span></span><span></span></div>
+        <div class="face">
+          <span class="eye"></span><span class="eye"></span
+          ><span class="mouth">ω</span>
+        </div>
+        <div class="body"></div>
+      </div>
+      <canvas id="live2d" aria-label="Live2D character"></canvas>
+      <p id="status">Drag me around</p>
+    </main>
+    <script type="module" src="./app.ts"></script>
+  </body>
+</html>

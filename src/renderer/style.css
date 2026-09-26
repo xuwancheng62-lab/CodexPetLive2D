@@ -1,0 +1,123 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: transparent;
+  overflow: hidden;
+}
+body {
+  -webkit-app-region: drag;
+  app-region: drag;
+  user-select: none;
+}
+#app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+.pet {
+  position: relative;
+  width: 230px;
+  height: 300px;
+  filter: drop-shadow(0 10px 12px #0004);
+  animation: breathe 2.8s ease-in-out infinite;
+}
+.pet[hidden] {
+  display: none;
+}
+#live2d {
+  position: absolute;
+  inset: 0;
+  width: 320px;
+  height: 420px;
+  pointer-events: none;
+}
+.ears {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 16px;
+}
+.ears span {
+  width: 74px;
+  height: 125px;
+  background: #7473c6;
+  border: 7px solid #454383;
+  border-radius: 90% 15% 45% 10%;
+  transform: rotate(-19deg);
+}
+.ears span + span {
+  transform: scaleX(-1) rotate(-19deg);
+}
+.face {
+  position: absolute;
+  top: 83px;
+  left: 15px;
+  width: 200px;
+  height: 176px;
+  background: #b3b2ef;
+  border: 8px solid #454383;
+  border-radius: 48% 48% 43% 43%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.eye {
+  width: 15px;
+  height: 28px;
+  border-radius: 50%;
+  background: #302d65;
+  animation: blink 5s infinite;
+}
+.mouth {
+  position: absolute;
+  top: 91px;
+  color: #494680;
+  font-size: 35px;
+}
+.body {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  width: 130px;
+  height: 74px;
+  background: #9291d8;
+  border: 8px solid #454383;
+  border-radius: 55% 55% 40% 40%;
+  box-sizing: border-box;
+}
+p {
+  position: relative;
+  margin: 8px 0 20px;
+  padding: 5px 11px;
+  color: #35335f;
+  font-size: 12px;
+  font-weight: 600;
+  background: #ffffffc9;
+  border-radius: 20px;
+}
+@keyframes breathe {
+  50% {
+    transform: translateY(-5px) scale(1.015);
+  }
+}
+@keyframes blink {
+  0%,
+  44%,
+  48%,
+  100% {
+    transform: scaleY(1);
+  }
+  46% {
+    transform: scaleY(0.1);
+  }
+}
