@@ -1,5 +1,7 @@
 # Codex Live2D Pet
 
+Code is licensed under the [MIT License](LICENSE). External models and Cubism Core retain their own licenses.
+
 A macOS desktop companion designed to react to Codex activity. This repository is in early development.
 
 ## Current status
